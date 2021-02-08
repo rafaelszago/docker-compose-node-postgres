@@ -2,23 +2,26 @@
 
 Simple Docker Compose settings for Node.js + Postgres
 
+## Required
+
+1. Docker
+2. Docker Compose
+
 ## Configuration
 
-1- Create `api` folder at root directory.
-
-2- Define your build target:
+Define your target:
 
 ```yml
 target: development
 ```
 
-3- Define your enviroment:
+Define your enviroment:
 
 ```yml
 NODE_ENV: development
 ```
 
-4- Set your postgres env:
+Set your postgres env:
 
 ```yml
 POSTGRES_USER: postgres
@@ -28,6 +31,8 @@ POSTGRES_DB: sampledb
 
 ## Usage
 
+Just run:
+
 ```bash
-docker-compose up --build
+docker-compose up
 ```
