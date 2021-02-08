@@ -1,6 +1,6 @@
-# Docker Compose for Node.js and Postgres
+# Docker Compose for Node.js + Postgres
 
-Simple config for Node.js and Postgres
+Simple Docker Compose settings for Node.js + Postgres
 
 ## Usage
 
