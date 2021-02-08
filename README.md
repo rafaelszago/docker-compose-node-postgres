@@ -2,7 +2,7 @@
 
 Simple Docker Compose settings for Node.js + Postgres
 
-## Usage
+## Configuration
 
 1- Create `api` folder at root directory.
 
@@ -26,7 +26,7 @@ POSTGRES_PASSWORD: postgres
 POSTGRES_DB: sampledb
 ```
 
-5- Run:
+## Usage
 
 ```bash
 docker-compose up --build
