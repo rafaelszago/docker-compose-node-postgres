@@ -9,16 +9,10 @@ Simple Docker Compose settings for Node.js + Postgres
 
 ## Configuration
 
-Define your target:
+Define your target (production or development):
 
 ```yml
 target: development
-```
-
-Define your enviroment:
-
-```yml
-NODE_ENV: development
 ```
 
 Set your postgres env:
@@ -34,5 +28,5 @@ POSTGRES_DB: sampledb
 Just run:
 
 ```bash
-docker-compose up
+docker-compose up --build
 ```
