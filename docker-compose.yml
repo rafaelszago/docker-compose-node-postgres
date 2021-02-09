@@ -3,20 +3,18 @@ services:
   api:
     build:
       context: ./api/
-      target: development
+      target: production
     volumes:
       - ./api:/api
     ports:
       - "3000:3000"
-    environment:
-      NODE_ENV: development
   postgres:
     image: postgres:11.2-alpine
     volumes:
       - database-data:/var/lib/postgresql/data/
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: sampledb
+    ports:
+      - "5432:5432"
+    env_file:
+      - db.env
 volumes:
   database-data:
